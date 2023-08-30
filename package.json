@@ -1,0 +1,22 @@
+{
+  "name": "web-handbook",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./site && cp -a ./dist ./site && node ./src/build.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "fast-json-stable-stringify": "^2.1.0",
+    "fdir": "^6.0.1",
+    "jsdom": "^22.1.0",
+    "prettier": "^3.0.0",
+    "web-docs-data": "^0.0.16"
+  },
+  "dependencies": {
+    "@mdn/browser-compat-data": "^5.3.9",
+    "css-tree": "^2.3.1",
+    "escape-html": "^1.0.3"
+  }
+}
